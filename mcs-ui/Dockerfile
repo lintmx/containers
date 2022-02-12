@@ -23,8 +23,6 @@ RUN npm install \
 # stage 3 运行
 FROM nginx:stable-alpine as prod-stage
 
-WORKDIR /app
-
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 EXPOSE 80
