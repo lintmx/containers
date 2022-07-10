@@ -1,3 +1,3 @@
 FROM nginx:stable-alpine
 
-COPY ./bilibili.conf /etc/nginx/conf.d/
+COPY ./bilibli-proxy/bilibili.conf /etc/nginx/conf.d/
